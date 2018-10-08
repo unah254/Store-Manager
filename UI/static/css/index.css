@@ -43,6 +43,16 @@ nav h1{
     left: 150px;
     float: left;
 }
+.h2{
+    color: #fff;
+   font-size: 20px;
+   position: relative;
+   text-decoration: none;
+   left: 180px;
+   float: left;
+   margin-top: 23px;
+
+}
 .btn {
    color: #fff;
    font-size: 18px;

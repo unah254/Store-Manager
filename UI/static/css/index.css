@@ -1,0 +1,102 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height:100%;
+    background-color: black;
+}
+#intro{
+    color:white;
+
+  }
+  #intro h1{
+    margin-top:120px;
+    font-size: 60px;
+    text-align: center;
+  }
+  #intro h4{
+      margin-top: 20px;
+      font-size: 25px;
+      text-align: center;
+  }
+nav{
+    width: 100%;
+    height: 90px;
+    background-color: gray;
+
+}
+
+.logo img{
+    width: 130px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+    float: left;
+    height: 80px;
+   
+}
+nav h1{
+    color: white;
+    position: relative;
+    /* top: 18px; */
+    left: 150px;
+    float: left;
+}
+.h2{
+    color: #fff;
+   font-size: 20px;
+   position: relative;
+   text-decoration: none;
+   left: 180px;
+   float: left;
+   margin-top: 23px;
+
+}
+.btn {
+   color: #fff;
+   font-size: 18px;
+   position: relative;
+   text-decoration: none;
+   float: right;
+   margin-top: 13px;
+   margin-right: 20px;
+ }
+ #search{
+  
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    height: 100px;
+    top:0px;
+    background-color: #f7f7f7;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    border-width: 0;
+    color: #333;
+    padding: 20px;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19) !important;
+  }
+   .search{
+    margin: 0 auto;
+    float: none;
+    overflow-x: none;
+    height: 48px;
+    }
+    .btn_home{
+        background-color:gray;
+        color:#fff;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 9px 17px;
+        display: inline-block;
+        text-align: center;
+        touch-action: manipulation;
+        white-space: nowrap;
+        line-height: 1.5384616;
+        border-radius: 3px;
+        border: 1px solid transparent;
+      }

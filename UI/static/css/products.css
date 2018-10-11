@@ -47,7 +47,7 @@ nav h1{
     color: black;
     }
     .sidenav a:active {
-        color: blue;
+        background-color: #3A5FCD;
     }
 
 h2{
@@ -94,6 +94,14 @@ h2{
     font-size: 1.5rem;
     margin-top: 80px;
 }
+.main-container p a {
+    margin-top: 30%;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-top: 80px;
+}
+
 .products{
     background: #313541;
     width: 400px;

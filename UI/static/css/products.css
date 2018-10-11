@@ -145,6 +145,10 @@ h2{
     height: 270px;
     margin-right: 5px;
 }
+.new{
+    float: right;
+    margin-top: 10px;
+}
 
 /*sales table*/
 

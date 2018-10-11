@@ -178,3 +178,11 @@
         padding: 5%;
     }
 }
+.rights {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 610px;
+  height: 500px;;
+  margin: 20px auto;
+  overflow: auto;
+}

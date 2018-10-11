@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/css/products.css">
+    <link rel="stylesheet" href="../static/css/form.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo"><a href="#"><img src="../static/images/logo.png"></a>
+        </div>
+
+        <h1>Store Manager</h1>
+        <form class="search">
+            <input class="searchinput" type="text" placeholder="Search products">
+            <button class="btn_home">Search</button>
+        </form>
+
+    </nav>
+    <div class="sidenav">
+        <a href="admin.html">Dashboard</a>
+        <a href="../attendant/salesrecord.html">Sales record</a>
+        <a href="../attendant/attendantprofile.html">Profile</a>
+        <a href="productcategory.html">Products</a>
+        <a href="../attendant/cart.html">Cart</a>
+        <a href="users.html">Users</a>
+        <a href="../index.html">Logout</a>
+    </div>
+    <table class="rights">
+        <h1>Available users</h1>
+        <tr>
+
+            <th>Email</th>
+            <th>Role</th>
+            <th>Actions</th>
+        </tr>
+        <tr>
+
+            <td>greisunah@admin.com</td>
+            <td>Admin</td>
+            <td>
+                <button id="accept" onclick="location.href='';">Give Rights</button>
+                <button id="decline">Edit</button>
+            </td>
+        </tr>
+        <tr>
+
+            <td>marjane@user.com</td>
+            <td>Store attendant</td>
+            <td>
+                <button id="accept" onclick="location.href='';">Give Rights</button>
+                <button id="decline">Edit</button>
+            </td>
+        </tr>
+
+
+    </table>
+</body>
+
+</html>

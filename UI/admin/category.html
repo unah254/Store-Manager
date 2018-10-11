@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/css/form.css">
     <link rel="stylesheet" href="../static/css/products.css">
     <title>Document</title>
 </head>
@@ -27,23 +28,27 @@
                 <a href="users.html">Users</a>
                 <a href="../index.html">Logout</a>
             </div>
-            <main>
-                <div class="heading">
-                    <h1>Admin</h1>
+    <div class="container">
+        <h1>Assign Category</h1>
+        <form action="">
+            <label for="Item Name"><b>Product Name</b></label>
+            <input type="text" placeholder="Enter Name" name="item_name" required>
+            <label for="Item Name"><b>Price</b></label>
+            <input type="text" placeholder="Enter Price" name="item_price" required>
+            <label for="Item Name"><b>ID</b></label>
+            <input type="text" placeholder="Enter Id" required>
+            <label for="Category"><b>Category</b></label>
+            <select id="category" name="category">
+                <option value="">Select...</option>
+                <option value="main">Electronics</option>
+                <option value="snacks">Furniture</option>
+                <option value="main">Clothes</option>
+                <option value="snacks">Utensils</option>
+            </select>
+            <div class="submit">
+                    <input type="submit" value="Add Item">
                 </div>
-                <div class="main-container">
-                    <div class="products">
-                        <p>Available products: 150</p>
-                    </div>
-        
-                    <div class="quantity">
-                        <p>Minimum required quantity: 10</p>
-                    </div>
-        
-                </div>
-        
-            </main>
-        
-        </div>
+        </form>
+    </div>
 </body>
 </html>

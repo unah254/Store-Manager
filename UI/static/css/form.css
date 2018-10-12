@@ -1,5 +1,5 @@
 
-/* Button used to open the contact form - fixed at the bottom of the page */
+/* Button used to open the contact form */
 .open-button {
     color: blue;
     margin-left: 20px;
@@ -15,9 +15,10 @@
     display: none;
     position: relative;
     margin-bottom: 20px;
+    margin-top: 20px;
     z-index: 9;
     width: 320px;
-    height:450px;
+    height:480px;
     border-radius: 12px;
     background: #000;
     padding: 10px 24px;
@@ -76,10 +77,14 @@
    .orders {
            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
            border-collapse: collapse;
-           width: 610px;
-           height: 500px;;
-           margin: 20px auto;
+           width: 1000px;
+           margin-top: 50px;
+           height: 200px;;
            overflow: auto;
+   }
+   .orders h1{
+     font-size: 15px;
+     font-family: sans-serif;
    }
        
    .orders td, .orders th {
@@ -181,8 +186,8 @@
 .rights {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  width: 610px;
-  height: 500px;;
+  width: 1000px;
+  height: 200px;;
   margin: 20px auto;
   overflow: auto;
 }

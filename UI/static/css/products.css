@@ -158,13 +158,15 @@ h1{
     font-size: 20px;
 }
 table{
-    width: 700px;
+    width: 1000px;
+    height: 200px;
     margin-right: 80px;
     margin-left: 250px;  
 }
 th{
     text-align: left;
-    font-size: 16px;
+    height: 3px;
+    font-size: 13px;
     font-family: 'Montserrat', sans-serif;
     background: gray;
 }
@@ -173,7 +175,7 @@ table, th, td{
     border-collapse: collapse;
 }
 th, td{
-    padding: 20px;
+    padding: 10px;
     color: azure;
 }
 tr{

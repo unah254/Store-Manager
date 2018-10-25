@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/css/products.css">
+    <link rel="stylesheet" href="../static/css/form.css">
+    <title>Document</title>
+</head>
+<body>
+        <nav>
+                <div class="logo"><a href="#"><img src="../static/images/logo.png"></a>
+                </div>
+        
+                <h1>Store Manager</h1>
+                <form class="search">
+                        <input class="searchinput" type="text" placeholder="Search products">
+                        <button class="btn_home">Search</button>
+                    </form>
+        
+            </nav>
+            <div class="sidenav">
+                <a href="admin.html">Dashboard</a>
+                <a href="../attendant/salesrecord.html">Sales record</a>
+                <a href="../attendant/attendantprofile.html">Profile</a>
+                <a href="productcategory.html">Products</a>
+                <a href="../attendant/cart.html">Cart</a>
+                <a href="cart.html">Users</a>
+                <a href="index.html">Logout</a>
+            </div>
+    <main>
+        <div class="heading">
+            <h1>Admin</h1>
+        </div>
+        <div class="main-container">
+            <div class="products">
+                <p><button class="open-button" onclick="openForm()">New User</button>
+                <div class="form-popup" id="myForm">
+                        <form action="/action_page.php" class="form-container">
+                          <h1>New user</h1>
+                      
+                          <label for="email"><b>Email</b></label>
+                          <input type="text" placeholder="Enter Email" name="email" required>
+                      
+                          <label for="psw"><b>Password</b></label>
+                          <input type="password" placeholder="Enter Password" name="psw" required>
+                      
+                          <button type="submit" class="btn">Add</button>
+                          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                        </form>
+                    </div>
+                </p>
+            </div>
+
+            <div class="quantity">
+                <p><a href="rights.html">List all users</a></p>
+            </div>
+
+        </div>
+
+    </main>
+    <script src="../static/js/pops.js"></script>
+</body>
+</html>

@@ -6,7 +6,6 @@ if (signin){
     signin.addEventListener
     ('submit', login);
 
-const user_type = token_decoder()
     
 function login(e){
     e.preventDefault();
@@ -23,9 +22,12 @@ function login(e){
         },
         body:JSON.stringify({email:user_email,password:password,})
         })
-        .then((res) => res.json())
+        .then((response) => response.json())
         .then((data) => {
             console.log(data)
+
+            // get token
+            let token = data.token;
            
             if (data.message=="enter valid email"){
                 // if request is unsuccessful
@@ -37,14 +39,18 @@ function login(e){
                 document.getElementById('mymessage').style.color = 'red'
                 document.getElementById('mymessage').innerHTML = data.message
             }
-            // store the token created when user is logged in
+            
             if (data.message === "successfully logged"){
                 // if request is successful
                 document.getElementById('mymessage').style.color = 'green'
                 document.getElementById('mymessage').innerHTML = data.message
-                window.location.href = '../admin/productcategory.html';
-            }
-            window.localStorage.setItem('token', data.token);
+                let role = decoded(token).identity.admin;
+
+                if(role){
+                    window.location.href("../../admin/productcategory.html");
+                }
+                else{
+                    window.location.href("../../attendant/cart.html");
         })
     }
   }

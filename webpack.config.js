@@ -4,38 +4,28 @@ module.exports = {
 
   // define entry points
   entry: {
-    app: "./src/js/main.js",
-    signup: "./src/js/signup.js",
-    signin: "./src/js/signin.js",
+    signup: "./UI/static/js/signup.js",
+    login: "./UI/static/js/login.js",
     
   },
   // define output point
   output: {
-    path: path.resolve(__dirname, "src/dist"),
-    filename: "[name].min.js"
-  },
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: [
-          {
-            loader: "babel-loader",
-            options: {
-              presets: ["env"]
-            }
-          }
-        ]
-      },
-      {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"]
-      },
-      {
-        test: /\.html$/,
-        use: ["html-loader"]
-      }
-    ]
-  }
+    path : path.resolve(__dirname, 'public/dist'),
+    filename: '[name].bundle.js'
+},
+module: {
+     rules: [
+         {
+         test: /\.js$/,
+         exclude: /node_modules/,
+         use:{
+             loader: "babel-loader",
+             options: {
+                 // babel-core && babel-preset-env gets babel setup ready to transpile
+                 presets: ["@babel/preset-env"   ]
+             }
+         }
+         }
+     ]
+}
 };

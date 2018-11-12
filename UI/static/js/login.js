@@ -1,18 +1,17 @@
 // // Login a User
-const token_decoder = require('jwt-decode');
+// const token_decoder = require('jwt-decode');
 
 let signin = document.getElementById('loginbox')
 if (signin){
-    signin.addEventListener
-    ('submit', login);
+    signin.addEventListener('submit', login);
 
-    
+}    
 function login(e){
     e.preventDefault();
     let user_email = document.getElementById('email').value;
     let password = document.getElementById('password').value;
    
-    let loginUrl = 'http://127.0.0.1:5000/api/v2/login';
+    let loginUrl = 'https://store-management-app.herokuapp.com/api/v2/login';
     
     fetch(loginUrl, {
         method: 'POST',
@@ -44,13 +43,17 @@ function login(e){
                 // if request is successful
                 document.getElementById('mymessage').style.color = 'green'
                 document.getElementById('mymessage').innerHTML = data.message
-                let role = decoded(token).identity.admin;
-
-                if(role){
-                    window.location.href("../../admin/productcategory.html");
-                }
-                else{
-                    window.location.href("../../attendant/cart.html");
+                window.location.href = "admin.html";
+            }
+            window.localStorage.setItem('token', data.token);
         })
-    }
-  }
+                // let isAdmin = token_decoder(token).identity.admin;
+
+                // if(isAdmin){
+                //     window.location.assign("../../admin/productcategory.html");
+                // }
+                // else{
+                //     window.location.assign("../UI/attendant/cart.html");
+                }
+            
+        

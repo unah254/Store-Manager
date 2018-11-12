@@ -9,7 +9,7 @@ function signup(e){
     let email = document.getElementById('email').value;
     let password = document.getElementById('password').value;
    
-    let signupUrl = 'http://127.0.0.1:5000/api/v2/signup';
+    let signupUrl = 'https://store-management-app.herokuapp.com/api/v2/signup';
     let token = localStorage.getItem('token')
 
     

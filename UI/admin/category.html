@@ -29,15 +29,16 @@
                 <a href="users.html">Users</a>
                 <a href="../index.html">Logout</a>
             </div>
+    <h1 id="mymessage"></h1>        
     <div class="container">
-        <h1>Assign Category</h1>
-        <form action="">
+        <h1>Add new product</h1>
+        <form action="" id="add">
             <label for="Item Name"><b>Product Name</b></label>
-            <input type="text" placeholder="Enter Name" name="item_name" required>
+            <input type="text" id="product_name" placeholder="Enter Name" name="item_name" required>
             <label for="Item Name"><b>Price</b></label>
-            <input type="text" placeholder="Enter Price" name="item_price" required>
-            <label for="Item Name"><b>ID</b></label>
-            <input type="text" placeholder="Enter Id" required>
+            <input type="text" id="product_price" placeholder="Enter Price" name="item_price" required>
+            <label for="Item Name"><b>Quantity</b></label>
+            <input type="text" id="quantity_price" placeholder="Enter Quantity" required>
             <label for="Category"><b>Category</b></label>
             <select id="category" name="category">
                 <option value="">Select...</option>
@@ -51,5 +52,6 @@
                 </div>
         </form>
     </div>
+    <script type="text/javascript" src="../static/js/create_products.js"></script>
 </body>
 </html>

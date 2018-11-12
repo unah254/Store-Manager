@@ -1,5 +1,5 @@
 {
-  "name": "Store-Manager",
+  "name": "storemanager",
   "version": "1.0.0",
   "description": "This is an online platform for store owners to manage their products",
   "main": "index.js",

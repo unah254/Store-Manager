@@ -8,7 +8,7 @@ if (signin){
 }    
 function login(e){
     e.preventDefault();
-    let user_email = document.getElementById('email').value;
+    let email = document.getElementById('email').value;
     let password = document.getElementById('password').value;
    
     let loginUrl = 'https://store-management-app.herokuapp.com/api/v2/login';
@@ -19,7 +19,7 @@ function login(e){
             'Accept': 'application/json, text/plain, */*',
             'Content-type':'application/json'
         },
-        body:JSON.stringify({email:user_email,password:password,})
+        body:JSON.stringify({email,password})
         })
         .then((response) => response.json())
         .then((data) => {

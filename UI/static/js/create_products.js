@@ -11,6 +11,10 @@ function create(e){
     let category = document.getElementById('category').value;
     let token = window.localStorage.getItem("token");
 
+    if (!token){
+        window.location ='http://127.0.0.1:5500/UI/admin/login.html'
+    }
+
     let productUrl = 'https://store-management-app.herokuapp.com/api/v2/product';
     
     fetch(productUrl, {

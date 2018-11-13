@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../static/css/form.css" />
+    <link rel="stylesheet" href="../static/css/products.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="#"><img src="../static/images/logo.png"/></a>
+      </div>
+
+      <h1>Store Manager</h1>
+
+      <form class="search">
+        <input class="searchinput" type="text" placeholder="Search products" />
+        <button class="btn_home">Search</button>
+      </form>
+    </nav>
+    <div class="sidenav">
+      <a href="../admin/admin.html">Dashboard</a>
+      <a href="salesrecord.html">Sales record</a>
+      <a href="createrecord.html">Create record</a>
+      <a href="../admin/productcategory.html">Products</a>
+      <a href="cart.html">Cart</a>
+      <a href="../admin/users.html">Users</a>
+      <a href="../admin/logout.html">Logout</a>
+    </div>
+    <P id="mymessage"></P>
+    <div class="container">
+      <h1>Add new record</h1>
+      <form action="" id="add">
+        <label for="Item Name"><b>Product Id</b></label>
+        <input
+          type="text"
+          id="product_id"
+          placeholder="Enter Name"
+          name="item_name"
+          required
+        />
+        <label for="Item Name"><b>Price</b></label>
+        <input
+          type="text"
+          id="price"
+          placeholder="Enter Price"
+          name="item_price"
+          required
+        />
+        <label for="Item Name"><b>Quantity to sell</b></label>
+        <input
+          type="text"
+          id="quantity"
+          placeholder="Enter Quantity"
+          required
+        />
+        <label for="Category"><b>Creator name</b></label>
+        <select id="category" name="category">
+          <option value="">Select...</option>
+          <option value="main"></option>
+        </select>
+        <div class="submit"><input type="submit" value="Add record" /></div>
+      </form>
+    </div>
+    <script type="text/javascript" src="../static/js/create_record.js"></script>
+  </body>
+</html>

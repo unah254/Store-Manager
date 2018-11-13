@@ -29,47 +29,22 @@
                 <a href="users.html">Users</a>
                 <a href="logout.html">Logout</a>
             </div>
-        
-        <table class="orders">
             <h1>Manage products</h1>
+            <p id="mymessage"></p>
+        <table class="orders">
+            
             <tr>
                 
-                <th>Product Id</th>
-                <th>Product</th>
+                <th>Product name</th>
+                <th>Price</th>
                 <th>Category</th>
+                <th>Quantity</th>
                 <th>Actions</th>
             </tr>
+            <tbody id="productTable"></tbody>
+            
             <tr>
                 
-                <td>B21</td>
-                <td>Microphone</td>
-                <td>Electronics</td>
-                <td>
-                    <button id="accept" onclick="location.href='';">Edit</button>
-                    <button id="decline">Delete</button>
-                </td>
-            </tr>
-            <tr>
-                
-                <td>C30</td>
-                <td>Melanin plate</td>
-                <td>Utensils</td>
-                <td>
-                    <button id="accept" onclick="location.href='';">Edit</button>
-                    <button id="decline">Delete</button>
-                </td>
-            </tr>
-            <tr>
-                <td>E14</td>
-                <td>Coffee table</td>
-                <td>Furniture</td>
-                <td>
-                    <button id="accept" onclick="location.href='edit_item.html';">Edit</button>
-                    <button id="decline">Delete</button>
-                </td>
-            </tr>
-            <tr>
-                <td id="bulk-manage"><strong><button id="decline">Delete All</button></strong></td>
                 <td colspan="5">
                     <button class="call_to" id="add" onclick="location.href='category.html';">Add Item</button>
                 </td>
@@ -78,6 +53,7 @@
 
     </div>
     </div>
-    
+    <script type="text/javascript" src="../static/js/products.js"></script>
+    <script type="text/javascript" src="../static/js/delete.js"></script>
 </body>
 </html>

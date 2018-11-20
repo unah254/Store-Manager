@@ -17,8 +17,9 @@ nav{
 nav h1{
     color: white;
     position: relative;
-    /* top: 18px; */
-    left: 150px;
+    font-family: 'Courier New', Courier, monospace;
+    top: 18px;
+    left: 10px;
     float: left;
 }
 /*sidebar */

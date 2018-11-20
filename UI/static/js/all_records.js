@@ -36,7 +36,7 @@ function allRecords() {
                                
                             }
 		records.forEach(record => {
-			productItems.innerHTML += ` <tr>
+			records.innerHTML += ` <tr>
             <td>${record.creator_name}</td>
             <td>${record.product_id}</td>
             <td>${record.price}</td>

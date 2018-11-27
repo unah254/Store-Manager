@@ -17,11 +17,11 @@ function allRecords() {
 	.then((response) => response.json())
 	.then(function (data) {
 		
-		let saleRecords= document.getElementById("records");
+		let saleRecords= document.getElementById("records2");
 		
         console.log(data);
-        console.log(data['Sale Records'])
-        let records = data['Sale Records'];
+        console.log(data['records'])
+        let records = data['records'];
         
         if (data.message === "No records available "){
                                 // if request is unsuccessful
@@ -36,12 +36,12 @@ function allRecords() {
                                
                             }
 		records.forEach(record => {
-			records.innerHTML += ` <tr>
+			saleRecords.innerHTML += ` <tr>
             <td>${record.creator_name}</td>
-            <td>${record.product_id}</td>
+            <td>${record.id}</td>
             <td>${record.price}</td>
             <td>${record.quantity_to_sell}</td>
-            <td>${record.date}</td>
+          
             
 
 

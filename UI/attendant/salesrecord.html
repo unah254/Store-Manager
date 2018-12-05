@@ -1,56 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../static/css/products.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../static/css/products.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav>
-        
+      <h1>Store App</h1>
 
-        <h1>Store App</h1>
-
-        <form class="search">
-            <input class="searchinput" type="text" placeholder="Search products">
-            <button class="btn_home">Search</button>
-        </form>
+      <form class="search">
+        <input class="searchinput" type="text" placeholder="Search products" />
+        <button class="btn_home">Search</button>
+      </form>
     </nav>
     <div class="sidenav">
-            <a href="../admin/admin.html">Dashboard</a>
-            <a href="salesrecord.html">Sales record</a>
-            <a href="../attendant/createrecord.html">Create record</a>
-            <a href="../admin/productcategory.html">Products</a>
-            <a href="../attendant/cart.html">Cart</a>
-            <a href="../admin/users.html">Users</a>
-            <a href="../admin/logout.html">Logout</a>
-        </div>
-
+        <a href="../admin/admin.html">Dashboard</a>
+        <a href="../admin/productcategory.html">Products</a>
+        <a href="../attendant/cart.html">Cart</a>
+        <a href="../attendant/salesrecord.html">Sales</a>
+        <a href="../admin/users.html">Users</a>
+        <a href="../admin/logout.html">Logout</a>
+    </div>
 
     <h1>SALES RECORD</h1>
+    <button class="new" onclick="location.href='createrecord.html';">Create new record</button>
     <div class="main">
-        <p id="records"></p>
-        <h2 id="mymessage"></h2>
+      <p id="records"></p>
+      <h2 id="mymessage"></h2>
 
-        <table id='records2'>
-            <tr>
-                <th>Creator name</th>
-                <th>Product ID</th>
-                <th>Price</th>
-                <th>Quantity sold</th>
-
-            </tr>
-            
-           
-
-        </table>
-
+      <table id="records2">
+        <tr>
+          <th>Creator name</th>
+          <th>Product ID</th>
+          <th>Price</th>
+          <th>Quantity sold</th>
+        </tr>
+      </table>
+      
     </div>
     <script type="text/javascript" src="../static/js/all_records.js"></script>
-</body>
-
+  </body>
 </html>

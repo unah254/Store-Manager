@@ -36,7 +36,11 @@ function create(e){
                 document.getElementById('mymessage').style.color = 'red'
                 document.getElementById('mymessage').innerHTML = data.message
             }
-            
+            if (data.message==="Anauthorized access, you must be an admin to access this level"){
+                // if request is unsuccessful
+                document.getElementById('mymessage').style.color = 'red'
+                document.getElementById('mymessage').innerHTML = data.message
+            }
             if (data.message === "product successfuly created"){
                 // if request is successful
                 document.getElementById('mymessage').style.color = 'green'

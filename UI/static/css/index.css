@@ -1,72 +1,59 @@
 body{
     height: 100%;
     margin: 0;
-    background-color: #94618e;
+    background-color: #F4F9F8;
 }
 #h1{
     float: left
 }
-  .bg-image {
-    filter: blur(8px);
-  -webkit-filter: blur(8px);
-  
-   /* Full height */
-    height: 600PX; 
-    
-    /* Center and scale the image nicely */
-    background-image: url("../images/background image.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  /* Position text in the middle of the page/image */
-  .bg-text {
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  h1{
     color: white;
-    font-weight: bold;
-    border: 3px solid #f1f1f1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 80%;
-    padding: 20px;
-    text-align: center;
+    margin-top:  50px;
   }
+  h3{
+    color: white;
+    margin-bottom: 80px;
+    margin-top: 50px;
+  }
+  div.background{
+    background-color: #179185;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 20px;
+    width: 600px;
+    height: 400px;
+    text-align: center;
+    box-shadow: 5px 5px 10px 10px #00332E;
+  }
+  button{
+    font-size: 14pt;
+    color:white;
+    background-color: #179185;
+    width:100px;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+.btn{
+    margin-bottom: 0px;
+}
+hr{
+    width: 100px;
+}
+
 nav{
     width: 100%;
     height: 90px;
-    /* background-color: gray; */
-
 }
 
 nav h1{
     color: white;
     position: relative;
     font-family: 'Courier New', Courier, monospace;
-    /* top: 18px; */
+    /* /* /* top: 18px; */
     left: 10px;
     float: left;
-}
-.h2{
-    color: #fff;
-   font-size: 20px;
-   position: relative;
-   text-decoration: none;
-   left: 900px;
-   float: left;
-   margin-top: 23px;
-
-}
-.btn {
-   color: #fff;
-   font-size: 20px;
-   position: relative;
-   text-decoration: none;
-   float: right;
-   margin-top: 13px;
-   margin-right: 20px;
- }
+} 

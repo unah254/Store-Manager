@@ -1,0 +1,64 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height:100%;
+    background-color: black;
+}
+#intro{
+    color:white;
+
+  }
+  #intro h1{
+    margin-top:120px;
+    font-size: 60px;
+    text-align: center;
+  }
+  #intro h4{
+      margin-top: 20px;
+      font-size: 25px;
+      text-align: center;
+  }
+nav{
+    width: 100%;
+    height: 90px;
+    background-color: gray;
+
+}
+
+.logo img{
+    width: 130px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+    float: left;
+    height: 80px;
+   
+}
+nav h1{
+    color: white;
+    position: relative;
+    /* top: 18px; */
+    left: 150px;
+    float: left;
+}
+.h2{
+    color: #fff;
+   font-size: 20px;
+   position: relative;
+   text-decoration: none;
+   left: 900px;
+   float: left;
+   margin-top: 23px;
+
+}
+.btn {
+   color: #fff;
+   font-size: 18px;
+   position: relative;
+   text-decoration: none;
+   float: right;
+   margin-top: 13px;
+   margin-right: 20px;
+ }
